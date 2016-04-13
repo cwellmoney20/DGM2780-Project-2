@@ -1,0 +1,44 @@
+// Mixin
+
+// @include clearfix;
+@mixin clearfix {
+	
+  &:after {
+  	content: '';
+  	clear: both;
+  	display: table;
+  }
+}// clearfix
+
+
+// @include border-radius
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+// @include mixin breakpoint
+@mixin breakpoint($point) {
+	@if $point == laptop {
+		@media (max-width: 1100px) { @content ; }
+	}
+	@else if $point == tablet {
+		@media (max-width: 768px) { @content ; }
+	}
+	@else if $point == phone {
+		@media (max-width: 480px) { @content ; }
+	}
+} 
+
+/*--demo header
+@mixin breakpoint($point) {
+  @if $point == 715 {
+    @media (max-width: 715px) { @content; }
+  }
+  @else if $point == another-break-point {
+    @media (max-width: 0) { @content; }
+  }
+}--*/

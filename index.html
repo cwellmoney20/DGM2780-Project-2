@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cozy Corners Bookstore</title>
+
+	<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- LOAD THE LATEST VERSION OF JQUERY-->
+	<!-- https://developers.google.com/speed/libraries/devguide#jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function() {
+	  $('.mobile').click(function () {
+		  $('nav').toggleClass('active'); 
+	   });
+	  
+	   $('nav ul li ul').each(function() {
+	    $(this).before('<span class=\"arrow\"></span>');
+	  });
+	  
+	  $('nav ul li').click(function() {
+	    $(this).children('ul').toggleClass('active');
+	     $(this).children('.arrow').toggleClass('rotate');
+	  });
+	});
+	</script>
+
+
+	<!-- *************** STYLE SHEETS ****************** -->
+	<link href="img/favicon.png" type="img/png" rel="icon">
+	<link href="css/reset.css" type="text/css" rel="stylesheet">
+	<link href="css/main.css" type="text/css" rel="stylesheet">
+	
+</head>
+<body>
+	<div id="colorbar"></div>
+	<div class="wrapper">
+
+
+		
+					
+
+		<div id="header">
+
+			<h1>Cozy Corner</h1>
+			<a class="mobile" href="#">&#9776;</a>
+			<nav id="navWrapper" class="site-navigation">
+				<ul class="primary-nav menu">
+					<li class="menu-item"><a class="main" href="#">Home </a></li>
+					<li class="parent menu-item"><a href="#">Genres</a>  
+						<ul class="dropdown">
+							<li class="menu-item sub-menu"><a href="#">Fiction</a></li>
+							<li class="menu-item sub-menu"><a href="#">Non-fiction</a></li>
+							<li class="menu-item sub-menu"><a href="#">Mystery</a></li>
+						</ul> 
+					</li>
+					<li class="menu-item"><a href="#">Contact</a></li>
+					<li class=""><a href="#">Social</a></li>
+				</ul> 
+				
+
+			</nav>
+
+		</div><!-- end of header -->
+
+		<div id="home-page">
+		
+			<div class="hero-banner">
+
+			</div>
+
+			
+			<div class="thumbnail-container">
+				<div class="home-content thumbmail-row">
+					<h2 class="sub-head column-12">Cozy Current</h2>
+
+					<p>Lucas ipsum dolor sit amet dantooine skywalker darth yoda twi'lek darth darth palpatine watto fisto. Wedge moff skywalker k-3po. Luke secura coruscant jar fett mara moff. Mara mara ben luuke skywalker skywalker watto sith. Organa mandalore lars dantooine boba. Skywalker jango wedge luke palpatine windu aayla twi'lek. Mon r2-d2 bespin c-3p0 hutt. Yoda hoth wedge mandalore sith skywalker binks. Darth wampa solo ahsoka calrissian. Grievous yavin bothan aayla fisto hoth. Dantooine solo biggs organa antilles binks darth kessel.</p> <br>
+
+					<p>Calrissian chewbacca ewok qui-gonn obi-wan. Fisto leia dooku tatooine skywalker. Amidala solo mace antilles lobot mara. Dooku yavin boba windu. Han mara darth ewok mara owen jade droid. Qui-gonn skywalker ackbar skywalker jabba grievous leia. Darth gonk antilles moff. Ventress owen skywalker darth ventress. Droid ewok r2-d2 dagobah skywalker moff jango fett. Leia c-3p0 dagobah c-3po. Grievous antilles maul calamari jawa mara solo calrissian ben. Moff antilles tusken raider alderaan jinn ewok dantooine.</p>
+
+				</div> <!-- end of home-content and row-->	
+				
+
+				<h2 class="sub-head">Cozy Choices</h2>
+
+		
+			<div class="thumbnail-row">
+
+				<div class="column-3">
+					<img src="../../Project2/starter-folder 2/img/war-of-the-world.jpg">
+				</div> <!-- end of column-3 -->
+
+				<div class="column-3">
+					<img src="../../Project2/starter-folder 2/img/black-and-bittern.jpg">
+				</div> <!-- end of column-3 -->
+
+				<div class="column-3">
+					<img src="../../Project2/starter-folder 2/img/murder-at-the-manor.jpg">
+				</div> <!-- end of column-3 -->
+
+				<div class="column-3">
+					<img src="../../Project2/starter-folder 2/img/midnight-murders.jpg">
+				</div> <!-- end of column-3 -->
+
+
+			</div> <!-- end of thumbnail-row -->
+		
+
+		
+			<div class="thumbnail-row">
+
+				<div class="column-6 left-side">
+					<h2 class="left-side dbl-head sub-head">Featured Read</h2>
+					<p class="left-side">Calrissian chewbacca ewok qui-gonn obi-wan. Fisto leia dooku tatooine skywalker. Amidala solo mace antilles lobot mara. Dooku yavin boba windu. Han mara darth ewok mara owen jade droid. Qui-gonn skywalker ackbar skywalker jabba grievous leia. Darth gonk antilles moff. Ventress owen skywalker darth ventress. Droid ewok r2-d2 dagobah skywalker moff jango fett. Leia c-3p0 dagobah c-3po. Grievous antilles maul calamari jawa mara solo calrissian ben. Moff antilles tusken raider alderaan jinn ewok dantooine.</p> <br>
+
+					<p class="left-side">Lucas ipsum dolor sit amet dantooine skywalker darth yoda twi'lek darth darth palpatine watto fisto. Wedge moff skywalker k-3po. Luke secura coruscant jar fett mara moff. Mara mara ben luuke skywalker skywalker watto sith. Organa mandalore lars dantooine boba. Skywalker jango wedge luke palpatine windu aayla twi'lek. Mon r2-d2 bespin c-3p0 hutt. Yoda hoth wedge mandalore sith skywalker binks. Darth wampa solo ahsoka calrissian. Grievous yavin bothan aayla fisto hoth. Dantooine solo biggs organa antilles binks darth kessel.</p>
+				</div> <!-- end of column-6 -->
+
+
+				<div class="column-6 ">
+					<h2 class="right-side dbl-head sub-head">Featured Read</h2>
+					<p class="right-side">Calrissian chewbacca ewok qui-gonn obi-wan. Fisto leia dooku tatooine skywalker. Amidala solo mace antilles lobot mara. Dooku yavin boba windu. Han mara darth ewok mara owen jade droid. Qui-gonn skywalker ackbar skywalker jabba grievous leia. Darth gonk antilles moff. Ventress owen skywalker darth ventress. Droid ewok r2-d2 dagobah skywalker moff jango fett. Leia c-3p0 dagobah c-3po. Grievous antilles maul calamari jawa mara solo calrissian ben. Moff antilles tusken raider alderaan jinn ewok dantooine.</p> <br>
+
+					<p class="right-side">Lucas ipsum dolor sit amet dantooine skywalker darth yoda twi'lek darth darth palpatine watto fisto. Wedge moff skywalker k-3po. Luke secura coruscant jar fett mara moff. Mara mara ben luuke skywalker skywalker watto sith. Organa mandalore lars dantooine boba. Skywalker jango wedge luke palpatine windu aayla twi'lek. Mon r2-d2 bespin c-3p0 hutt. Yoda hoth wedge mandalore sith skywalker binks. Darth wampa solo ahsoka calrissian. Grievous yavin bothan aayla fisto hoth. Dantooine solo biggs organa antilles binks darth kessel.</p>
+				</div> <!-- end of column-6 -->
+
+
+			</div> <!-- end of thumbnail r0w-->
+		</div> <!-- end of thumbnail-container-->
+		
+
+		</div><!-- home-page -->
+
+	<div class="footer-container">
+		<div id="footer">
+
+			<ul>
+					<li>
+						<a href="#">Home</a> 
+						<span>|</span></li>
+					<li>
+						<a href="#">About Us</a>  
+						<span>|</span></li>
+					<li>
+						<a href="#">Contact</a>  
+						<span>|</span></li>
+					<li>
+						<a href="#">Social</a>
+					</li>
+				</ul>
+
+		</div> <!-- end of #footer -->
+	</div> <!-- end of footer-container -->
+
+	</div><!-- wrapper -->
+
+<script src="js/nav.min.js"> </script>
+	
+</body>
+</html>

@@ -1,0 +1,47 @@
+// Footer SCSS
+.footer-container {
+	@include breakpoint(phone) {
+		width: 420/1000 *100%;
+		} // end of breakpoint
+
+		#footer {
+			/*@include clearfix;
+			width: 100%;*/
+			margin: 8% auto 0 auto;
+			text-align: center;
+
+			ul {
+			    list-style-type: none;
+
+				li {
+					display:inline;
+					padding-left: 1px;
+					margin: 1px;
+
+					span {
+						padding-left: 1px;
+					}
+
+					a {
+						text-decoration: none;
+						//color: #729f98;
+						color:  #3b3a36;
+						margin: 1px;
+						@extend span;
+
+
+						&:hover {
+							//color: #c7a693;
+							color:$link-hover;
+							background:lighten($menu-background,5%);
+							transition-duration: (0.5s);
+
+						}
+					}
+
+				} //li
+			}//ul
+
+
+		} //end of #footer
+} // end of footer-container
